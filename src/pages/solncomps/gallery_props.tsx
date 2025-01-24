@@ -17,7 +17,8 @@ function Profile({scientist, size = 100}: GalleryProps) {
           {scientist.profession}
         </li>
         <li>
-          <b>Awards: </b>
+          <b>Awards: {scientist.awards.split(',').length}</b>
+          <br></br>
           {scientist.awards}
         </li>
         <li>
